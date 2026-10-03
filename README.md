@@ -17,6 +17,7 @@
   <a href="https://www.npmjs.com/package/@cobusgreyling/loop-context"><img src="https://img.shields.io/npm/v/@cobusgreyling/loop-context?label=loop-context" alt="loop-context npm"></a>
   <a href="https://github.com/cobusgreyling/loop-engineering/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT"></a>
   <a href="https://cobusgreyling.github.io/loop-engineering/"><img src="https://img.shields.io/badge/GitHub_Pages-live%20%7C%20interactive-3ee8c5" alt="Pages"></a>
+  <a href="https://github.com/sololys/loop-engineering/wiki"><img alt="wiki: live" src="https://img.shields.io/badge/wiki-live-3ee8c5" /></a>
 </p>
 
 
@@ -78,6 +79,7 @@ For developers using Grok, Claude Code, Codex, Cursor, and other AI coding agent
 | Start here | Description |
 |------------|-------------|
 | [Quickstart (5 min)](docs/QUICKSTART.md) | Scaffold → cost check → audit → first loop — **start here if you just landed** |
+| [Wiki Portal](https://github.com/sololys/loop-engineering/wiki) | Comprehensive systems documentation, primitives, patterns, and safety architecture |
 | [Loop Engineering essay](https://cobusgreyling.substack.com/p/loop-engineering) | The concept, primitives, and Grok mapping — read for the why |
 | [Pattern Picker](docs/pattern-picker.md) | Which loop to run first — **start here if unsure** |
 | [Primitives Matrix](docs/primitives-matrix.md) | Cross-tool loop primitive mapping — bookmark this |
