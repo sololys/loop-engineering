@@ -1,3 +1,24 @@
+# `LOOP-ENGINEERING` // DETERMINISTIC CONTROL & VERIFICATION TOOLING (`0xABCDEF00`)
+
+```text
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  ROOM: THE TOOL // CLOSED-LOOP METRICS, NON-CLOSING DYNAMICS & BUILD HARNESSES       ║
+║  STATE ANCHOR : 0xABCDEF00 (v1.5.0-MASTER)                                           ║
+║  STACK MAP    : aa72ef91e9ccfad6... (4/4 Byte-Identical across Constellation)        ║
+║  DEFAULT OUT  : [HOLD // 0.00V_DC] (OPEN_AS_SOFTWARE_DEMONSTRATION)                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
+### `0x01` // Control-Loop Discipline ($O(n)$ Single-Pass & Fail-Closed)
+
+Every engineering loop in this repository obeys three non-negotiable physical and computational invariants:
+
+1. **Zero Speculative Iteration:** Loops execute in bounded $O(n)$ deterministic passes using exclusively the Python Standard Library (`fractions`, `decimal`, `struct`, `hashlib`) or synthesizable `IEEE 1800-2012` SystemVerilog. No IEEE 754 `NaN`/`Inf` fallbacks are permitted.
+2. **Causal TOCTOU Lock ($W_{\text{pre}} \to W_{\text{post}}$):** Any loop interfacing with external infrastructure compiles into the canonical `205-byte` (`1640-bit`) capsule verified by `gothenburg_corridor_rosetta_top.sv` (`SHA-256: 3c7f3a31...`).
+3. **Thermodynamic & Hardware Grounding (Registry B):** In the absence of witnessed physical loop current ($I_{\text{shunt}} \ge 500\text{ }\mu\text{A}$) and causal ADC timestamps ($t_{\text{ADC}} \ge t_{\text{clk}}$), all loop outputs remain clamped at `0.00 V DC` (`HOLD`).
+
+---
+
 # Loop Engineering
 
 
@@ -306,3 +327,7 @@ MIT
     </picture>
   </a>
 </p>
+
+---
+`STATE ANCHOR: 0xABCDEF00` · `RELEASE: v1.5.0-MASTER` · `GATE: [SSOT_LOCKED // HOLD 0.00V_DC]` · `ORCID: 0009-0006-0431-6637`
+
